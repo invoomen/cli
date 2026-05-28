@@ -1,0 +1,45 @@
+{
+    "name": "@invoomen/cli",
+    "version": "0.1.0",
+    "description": "Command-line interface for Invoomen — generate images, videos, and music from your terminal, and install Invoomen as an MCP server in Claude, Codex, Cursor, or Claude Desktop.",
+    "license": "MIT",
+    "type": "module",
+    "bin": {
+        "invoomen": "./dist/index.js"
+    },
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "engines": {
+        "node": ">=18"
+    },
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "dev": "tsx src/index.ts"
+    },
+    "dependencies": {
+        "@iarna/toml": "^2.2.5"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.0",
+        "tsx": "^4.21.0",
+        "typescript": "^5.5.0"
+    },
+    "homepage": "https://invoomen.com/cli",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/invoomen/cli.git"
+    },
+    "keywords": [
+        "invoomen",
+        "mcp",
+        "model-context-protocol",
+        "ai",
+        "image-generation",
+        "video-generation",
+        "claude",
+        "codex",
+        "cursor"
+    ]
+}
